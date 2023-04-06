@@ -12,14 +12,14 @@ import java.util.ArrayList;
 
 import org.springframework.http.HttpStatus;
 
-import br.edu.ufrb.gcet236.enfermeiros.entities.Colaboradores;
+import br.edu.ufrb.gcet236.enfermeiros.entities.Hospital;
 import br.edu.ufrb.gcet236.enfermeiros.entities.Enfermeiro;
 import br.edu.ufrb.gcet236.enfermeiros.entities.Pessoa;
 
 @RestController
 @RequestMapping("api")
 public class EnfermeirosController {
-    Colaboradores colaboradores = new Colaboradores();
+    Hospital colaboradores = new Hospital();
     ArrayList<Enfermeiro> enfermeiros = new ArrayList<Enfermeiro>();
 
     @GetMapping("/hello-world")
