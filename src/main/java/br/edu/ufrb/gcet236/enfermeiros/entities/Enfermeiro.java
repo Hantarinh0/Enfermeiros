@@ -2,11 +2,13 @@ package br.edu.ufrb.gcet236.enfermeiros.entities;
 
 public class Enfermeiro extends Pessoa {
     private String lotação;
-
+    
+    //retorna a lotação do enfermeiro.
     public String getLotação() {
         return this.lotação;
     }
-
+    
+    //define a lotação do enfermeiro.
     public void setLotação(String lotação) {
         this.lotação = lotação;
     }
@@ -14,7 +16,7 @@ public class Enfermeiro extends Pessoa {
     @Override
     public String toString() {
 
-        // Return Json of parameters lotação, rg, cpf, nome and telefone
+        // Retorna Json uma representação em formato JSON dos atributos lotação, rg, cpf, nome e telefone do enfermeiro.
         return "{" + " lotação='" + this.getLotação() + "'" + ", rg='" + this.getRg() + "'" + ", cpf='" + this.getCpf() + "'"
                 + ", nome='" + this.getNome() + "'" + ", telefone='" + this.getTelefone() + "'" + "}";
     }
