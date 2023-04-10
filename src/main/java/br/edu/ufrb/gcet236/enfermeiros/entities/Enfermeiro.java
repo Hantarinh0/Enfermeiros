@@ -16,7 +16,7 @@ public class Enfermeiro extends Pessoa {
     @Override
     public String toString() {
 
-        // Retorna Json uma representação em formato JSON dos atributos lotação, rg, cpf, nome e telefone do enfermeiro.
+        // Retorna uma representação em formato JSON dos atributos lotação, rg, cpf, nome e telefone do enfermeiro.
         return "{" + " lotação='" + this.getLotação() + "'" + ", rg='" + this.getRg() + "'" + ", cpf='" + this.getCpf() + "'"
                 + ", nome='" + this.getNome() + "'" + ", telefone='" + this.getTelefone() + "'" + "}";
     }
